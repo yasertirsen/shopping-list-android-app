@@ -9,7 +9,7 @@
         android:roundIcon="@drawable/ic_app"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".checkout" />
+        <activity android:name=".Checkout" />
         <activity
             android:name=".ShoppingListActivity"
             android:windowSoftInputMode="adjustResize" />

@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -116,6 +115,7 @@ public class ShoppingListActivity extends AppCompatActivity {
 
                 etItem.setVisibility(View.GONE);
                 removeItem.setVisibility(View.GONE);
+                etItem.setText("");
 
                 hideKeybaord(v);
             }
@@ -140,7 +140,7 @@ public class ShoppingListActivity extends AppCompatActivity {
                 for(Item item : items) {
                     total+=item.getPrice();
                 }
-                Intent intent = new Intent(getApplicationContext(), checkout.class);
+                Intent intent = new Intent(getApplicationContext(), Checkout.class);
                 intent.putExtra(TOTAL, total);
                 intent.putExtra(NO_OF_ITEMS, items.size());
                 startActivity(intent);

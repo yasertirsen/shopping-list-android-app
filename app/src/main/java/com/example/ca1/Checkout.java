@@ -13,7 +13,7 @@ import android.widget.Toast;
 import static com.example.ca1.ShoppingListActivity.NO_OF_ITEMS;
 import static com.example.ca1.ShoppingListActivity.TOTAL;
 
-public class checkout extends AppCompatActivity {
+public class Checkout extends AppCompatActivity {
 
     private TextView tvTotal;
     private TextView tvNoOfItems;
